@@ -24,10 +24,9 @@ export default function RootLayout({
           <Navigation />
           <div className="w-full flex flex-col">
             <Header />
-            <main className="bg-[#121212]">{children}</main>
+            <main className="bg-[#121212] h-screen">{children}</main>
           </div>
         </div>
-        <Register />
       </body>
     </html>
   );

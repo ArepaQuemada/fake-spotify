@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Playlists de Spotify",
+    "content": [
+      {
+        "img": "https://i.scdn.co/image/ab67706f00000002023867d5cf694548540423dd",
+        "name": "Today's Top Hits",
+        "description": "Doja Cat on top of the Hottest 50!."
+      },
+      {
+        "img": "https://i.scdn.co/image/ab67706f000000020107a3aeac780c2d2cf621ca",
+        "name": "RapCaviar",
+        "description": "New music from Fivio Foreign, Lil Yachty and Drake. "
+      },
+      {
+        "name": "All Out 2010s",
+        "description": "The biggest songs of the 2010s. ",
+        "img": "https://i.scdn.co/image/ab67706f000000027876fe166a29b8e6b8db14da"
+      },
+      {
+        "name": "Rock Classics",
+        "description": "Rock legends & epic songs that continue to inspire generations. Cover: Foo Fighters",
+        "img": "https://i.scdn.co/image/ab67706f0000000278b4745cb9ce8ffe32daaf7e"
+      },
+      {
+        "name": "Chill Hits",
+        "value": "Kick back to the best new and recent chill hits.",
+        "img": "https://i.scdn.co/image/ab67686d00003ae06f947ec9d24e653e783a8201"
+      }
+    ]
+  }
+]
