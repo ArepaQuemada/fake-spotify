@@ -2,10 +2,11 @@ import Image from "next/image";
 import spotifyLogo from "@src/assets/spotify-1.svg";
 import { Anchor } from "../Anchor";
 import Button from "../button/Button";
+import Footer from "../footer/Footer";
 
 const Navigation = () => {
   return (
-    <nav className="min-h-screen min-w-[30vw] border-soft flex flex-col gap-2">
+    <nav className="border-soft flex flex-col gap-2 nav-size md:min-w-[30vw] ">
       <div className="bg-[#121212] border-soft p-4">
         <ul className="space-y-6">
           <li className="group">
@@ -21,7 +22,7 @@ const Navigation = () => {
           <li className="group"></li>
           <li>
             <Anchor
-              href="#"
+              href="/"
               icon={
                 <svg
                   role="img"
@@ -85,22 +86,24 @@ const Navigation = () => {
             Tu biblioteca
           </Anchor>
         </section>
-        <section className="bg-[#242424] border-soft p-4">
-          <h3 className="text-lg mb-3 font-bold">Crea tu primera playlist</h3>
-          <p className="mb-8">Es muy facil! Te vamos a ayudar</p>
-          <Button>Crear playlist</Button>
-        </section>
-        <section className="bg-[#242424] border-soft p-4">
-          <h3 className="text-lg mb-3 font-bold">
-            Busquemos algunos podcasts para seguir
-          </h3>
-          <p className="mb-8">
-            Te mantendremos al tanto de los nuevos episodios
-          </p>
-          <Button>Explotar podcasts</Button>
-        </section>
+        <div className="flex flex-col gap-6 max-h-[160px] overflow-y-scroll overflow-x-none lg:max-h-none lg:overflow-y-hidden">
+          <section className="bg-[#242424] border-soft p-4">
+            <h3 className="text-lg mb-3 font-bold">Crea tu primera playlist</h3>
+            <p className="mb-8">Es muy facil! Te vamos a ayudar</p>
+            <Button>Crear playlist</Button>
+          </section>
+          <section className="bg-[#242424] border-soft p-4">
+            <h3 className="text-lg mb-3 font-bold">
+              Busquemos algunos podcasts para seguir
+            </h3>
+            <p className="mb-8">
+              Te mantendremos al tanto de los nuevos episodios
+            </p>
+            <Button>Explotar podcasts</Button>
+          </section>
+        </div>
+        <Footer />
       </div>
-      <div></div>
     </nav>
   );
 };
