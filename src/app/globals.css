@@ -5,8 +5,9 @@
 body {
   background-color: #000;
   color: #fff;
-  overscroll-behavior-y: none;
   padding: 0.5rem;
+  overflow: hidden;
+  max-height: 100vh;
 }
 
 /* Custom scrollbar */
@@ -48,4 +49,22 @@ body {
 
 .register-size {
   width: calc(100vw - 1rem);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
+}
+
+.main-height {
+  height: calc(100vh - 5rem);
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
