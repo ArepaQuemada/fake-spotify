@@ -2,26 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #000;
+  color: #fff;
+  overscroll-behavior-y: none;
+  padding: 0.5rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #282828;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.1;
+  transform: scale(1.1);
+}
+
+.border-500 {
+  border-radius: 500px;
+}
+
+.border-soft {
+  border-radius: 10px;
+}
+
+.border-bottom__hide {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.nav-size {
+  min-height: calc(100vh - 1rem);
+}
+
+.register-size {
+  width: calc(100vw - 1rem);
 }
