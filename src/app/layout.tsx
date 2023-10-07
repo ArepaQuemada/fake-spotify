@@ -24,7 +24,9 @@ export default function RootLayout({
           <Navigation />
           <div className="w-full flex flex-col">
             <Header />
-            <main className="bg-[#121212] h-screen">{children}</main>
+            <main className="bg-[#121212] main-height overflow-auto">
+              {children}
+            </main>
           </div>
         </div>
       </body>

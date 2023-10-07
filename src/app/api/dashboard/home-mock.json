@@ -25,8 +25,29 @@
       },
       {
         "name": "Chill Hits",
-        "value": "Kick back to the best new and recent chill hits.",
+        "description": "Kick back to the best new and recent chill hits.",
         "img": "https://i.scdn.co/image/ab67686d00003ae06f947ec9d24e653e783a8201"
+      },
+      {
+        "name": "Viva Latino",
+        "img": "https://i.scdn.co/image/ab67706f00000002de3f48865f6d734f36ac442c",
+        "description": "Today's top Latin hits, elevando nuestra música. Cover: BIzarrap & Milo j"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Dormir",
+    "content": [
+      {
+        "img": "https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06",
+        "name": "Sleep",
+        "description": "Relax and indulge with these calming classical pieces."
+      },
+      {
+        "name": "DayDreamer",
+        "img": "https://i.scdn.co/image/ab67706f00000002d2291e0c5d43a1b21a941031",
+        "description": "Drift away with enthralling instrumentals."
       }
     ]
   }

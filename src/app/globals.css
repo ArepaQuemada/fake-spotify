@@ -58,5 +58,13 @@ body {
 }
 
 .main-height {
-  max-height: calc(100vh - 4rem);
+  height: calc(100vh - 5rem);
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
