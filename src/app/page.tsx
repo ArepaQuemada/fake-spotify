@@ -6,7 +6,6 @@ export default async function Home() {
     cache: "no-cache",
   });
   const data = (await res.json()) as Dashboard;
-  console.log(data);
   return (
     <section className="bg-[rgb(83, 83, 83)] p-4 h-full">
       {data.map((item) => (
