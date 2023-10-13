@@ -1,11 +1,9 @@
 import CardPlay from "@src/components/card-play/CardPlay";
 import { Dashboard } from "@src/models/Dashboard.model";
+import { getHome } from "@src/services/main";
 
 export default async function Home() {
-  const res = await fetch("http://localhost:3000/api/dashboard", {
-    cache: "no-cache",
-  });
-  const data = (await res.json()) as Dashboard;
+  const data = (await getHome()) as Dashboard;
   return (
     <section className="bg-[rgb(83, 83, 83)] p-4 h-full">
       {data.map((item) => (
