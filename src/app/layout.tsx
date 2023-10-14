@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navigation from "@src/components/navigation/Navigation";
 import Register from "@src/components/register/Register";
+import About from "@src/components/about/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,10 @@ export default function RootLayout({
           <Navigation />
           <div className="w-full flex flex-col">
             <Header />
-            <main className="bg-[#121212] main-height overflow-auto">
+            <div className="bg-[#121212] main-height overflow-auto">
               {children}
-            </main>
+              <About />
+            </div>
           </div>
         </div>
       </body>
