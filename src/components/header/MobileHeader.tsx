@@ -4,6 +4,7 @@ import search from "@src/assets/search.svg";
 
 import Image from "next/image";
 import Button from "../button/Button";
+import Hamburguer from "../hamburguer/Hamburguer";
 
 const MobileHeader = () => {
   return (
@@ -18,6 +19,7 @@ const MobileHeader = () => {
         <div className="capitalize">
           <Button>ABRIR APLICACION</Button>
         </div>
+        <Hamburguer />
       </div>
     </header>
   );

@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 body {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: none;
   background-color: #000;
   color: #fff;
+  position: relative;
 }
 
 .cards {
