@@ -6,7 +6,7 @@ import Footer from "../footer/Footer";
 
 const Navigation = () => {
   return (
-    <nav className="border-soft flex flex-col gap-2 nav-size md:min-w-[30vw] ">
+    <nav className="border-soft hidden md:flex md:flex-col md:gap-2 md:nav-size md:min-w-[30vw] ">
       <div className="bg-[#121212] border-soft p-4">
         <ul className="space-y-6">
           <li className="group">
@@ -89,7 +89,7 @@ const Navigation = () => {
         <div className="flex flex-col gap-6 max-h-[160px] overflow-y-scroll overflow-x-none lg:max-h-none lg:overflow-y-hidden">
           <section className="bg-[#242424] border-soft p-4">
             <h3 className="text-lg mb-3 font-bold">Crea tu primera playlist</h3>
-            <p className="mb-8">Es muy facil! Te vamos a ayudar</p>
+            <p className="mb-8">¡Es muy fácil! Te vamos a ayudar</p>
             <Button>Crear playlist</Button>
           </section>
           <section className="bg-[#242424] border-soft p-4">
