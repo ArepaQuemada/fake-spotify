@@ -21,7 +21,7 @@ const Button = ({ as = "primary", size = "md", children }: ButtonProps) => {
     <button
       className={`${colorClasses[as!]} ${
         sizeClasses[size!]
-      } pl-6 pr-6 border-500 transform hover:scale-105 font-bold`}
+      } pl-6 pr-6 border-500 transform hover:scale-105 text-sm md:font-bold md:text-base`}
     >
       {children}
     </button>

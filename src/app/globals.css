@@ -3,16 +3,22 @@
 @tailwind utilities;
 
 body {
+  overflow: auto;
+  max-height: none;
   background-color: #000;
   color: #fff;
-  padding: 0.5rem;
-  overflow: hidden;
-  max-height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 16px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -51,15 +57,8 @@ body {
   width: calc(100vw - 1rem);
 }
 
-.cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
-  justify-items: center;
-}
-
 .main-height {
-  height: calc(100vh - 5rem);
+  height: auto;
 }
 
 .ellipsis {
@@ -68,4 +67,26 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow: hidden;
+    max-height: 100vh;
+    padding: 0.5rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(187px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .main-height {
+    height: calc(100vh - 5rem);
+  }
 }

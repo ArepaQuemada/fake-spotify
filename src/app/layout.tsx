@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap justify-center md:flex-nowrap md:justify-start">
           <Navigation />
           <div className="w-full flex flex-col">
             <Header />
