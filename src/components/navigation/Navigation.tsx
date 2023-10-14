@@ -89,7 +89,7 @@ const Navigation = () => {
         <div className="flex flex-col gap-6 max-h-[160px] overflow-y-scroll overflow-x-none lg:max-h-none lg:overflow-y-hidden">
           <section className="bg-[#242424] border-soft p-4">
             <h3 className="text-lg mb-3 font-bold">Crea tu primera playlist</h3>
-            <p className="mb-8">Es muy facil! Te vamos a ayudar</p>
+            <p className="mb-8">¡Es muy fácil! Te vamos a ayudar</p>
             <Button>Crear playlist</Button>
           </section>
           <section className="bg-[#242424] border-soft p-4">
