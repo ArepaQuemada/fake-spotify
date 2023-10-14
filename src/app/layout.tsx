@@ -25,7 +25,7 @@ export default function RootLayout({
           <Navigation />
           <div className="w-full flex flex-col">
             <Header />
-            <div className="bg-[#121212] main-height overflow-auto">
+            <div className="bg-[#121212] main-height overflow-auto p-2 md:p-4">
               {children}
               <About />
             </div>
